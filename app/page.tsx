@@ -118,12 +118,16 @@ export default function EscapeElevateLanding() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-white text-emerald-400 hover:bg-white hover:text-emerald-800 px-8 py-4 text-lg backdrop-blur-sm focus:ring-4 focus:ring-white/50"
-                aria-label="Learn about corporate retreat packages"
+                className="border-2 border-white text-emerald-400 hover:bg-white hover:text-emerald-800 px-8 py-4 text-lg backdrop-blur-sm focus:ring-4 focus:ring-white/50 bg-transparent"
+                aria-label="Rent outdoor camping gear"
                 asChild
               >
-                <a href="https://forms.office.com/r/yvQ8xrUq00" target="_blank" rel="noopener noreferrer">
-                  Corporate Retreats
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeuoVbPDWlUws6VnV7GFWi1rvsBeooVfdZF0ld3icHficzkTA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Rent Outdoor Gears
                 </a>
               </Button>
             </div>
