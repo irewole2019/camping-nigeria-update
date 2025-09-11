@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     siteName: "Camping Nigeria",
     images: [
       {
-        url: "/images/hero-camping.jpg",
+        url: "/images/camping-nigeria-og-image.png",
         width: 1200,
-        height: 630,
-        alt: "Camping Nigeria - Outdoor Adventures",
+        height: 1200,
+        alt: "Camping Nigeria Logo - Adventure Made Simple",
       },
     ],
     locale: "en_US",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Camping Nigeria - Adventure Made Simple",
     description: "Experience unforgettable outdoor adventures in Nigeria without the planning stress.",
-    images: ["/images/hero-camping.jpg"],
+    images: ["/images/camping-nigeria-og-image.png"],
   },
     generator: 'v0.app'
 }
