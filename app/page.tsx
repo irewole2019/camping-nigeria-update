@@ -4,6 +4,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import {
   Users,
   Camera,
@@ -23,6 +24,7 @@ import {
   Gift,
   ArrowRight,
   Instagram,
+  HelpCircle,
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -642,6 +644,123 @@ export default function EscapeElevateLanding() {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section id="faq" className="py-16 bg-gradient-to-r from-warm-beige-100 to-golden-sand-100">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <HelpCircle className="h-12 w-12 text-burnt-orange-500 mx-auto mb-4" />
+              <h2 className="text-4xl font-bold text-forest-green-700 mb-4">Frequently Asked Questions</h2>
+              <p className="text-xl text-dark-forest-700 max-w-2xl mx-auto">
+                Everything you need to know about camping adventures in Nigeria
+              </p>
+            </div>
+            <div className="max-w-4xl mx-auto">
+              <Accordion type="single" collapsible className="space-y-4">
+                <AccordionItem value="item-1" className="bg-white border border-forest-green-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-forest-green-700 font-semibold hover:text-burnt-orange-500">
+                    Where do Camping Nigeria adventures take place?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-dark-forest-700">
+                    We operate across Nigeria, with regular adventures in Lagos, Abuja, Ogun State, and other scenic
+                    locations. Each adventure is carefully selected for its natural beauty, safety, and accessibility.
+                    We partner with verified outdoor locations and resorts throughout Nigeria to ensure the best
+                    experience for our adventurers.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-2" className="bg-white border border-forest-green-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-forest-green-700 font-semibold hover:text-burnt-orange-500">
+                    What is included in the adventure packages?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-dark-forest-700">
+                    All our packages include professional camping gear and equipment, certified guides and safety
+                    support, all meals and refreshments, round-trip transportation from meeting points, professional
+                    adventure photography, safety equipment, and 24/7 support. You don't need to bring anything except
+                    personal items and a sense of adventure.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3" className="bg-white border border-forest-green-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-forest-green-700 font-semibold hover:text-burnt-orange-500">
+                    How do I book an adventure with Camping Nigeria?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-dark-forest-700">
+                    Booking is simple! Click any "Book Adventure" or "Join Next Adventure" button on this website to
+                    fill out our intake form at forms.office.com/r/yvQ8xrUq00. Our team will contact you within 24 hours
+                    to confirm availability, discuss your preferences, and complete your booking. You can also reach us
+                    directly via phone at +234 704 053 8528 or +234 813 312 1484, or email us at
+                    campinggearsng@gmail.com.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-4" className="bg-white border border-forest-green-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-forest-green-700 font-semibold hover:text-burnt-orange-500">
+                    What makes Camping Nigeria different from planning my own camping trip?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-dark-forest-700">
+                    We eliminate all the stress of planning outdoor adventures. Instead of spending hours researching
+                    locations, buying expensive gear you'll rarely use, worrying about safety, and coordinating group
+                    logistics, we handle everything. Our expert guides know the best locations in Nigeria, we provide
+                    all equipment, ensure safety protocols are followed, and create seamless group experiences. You just
+                    show up and enjoy.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-5" className="bg-white border border-forest-green-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-forest-green-700 font-semibold hover:text-burnt-orange-500">
+                    Do you offer corporate team-building retreats in Nigeria?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-dark-forest-700">
+                    Yes! We specialize in corporate team-building retreats across Nigeria. Our corporate packages
+                    include custom team-building activities, leadership development workshops, complete logistics
+                    management, post-event feedback reports, and branded gear for employees. We've worked with companies
+                    in Lagos, Abuja, and throughout Nigeria to improve team cohesion, develop leadership skills, and
+                    boost employee satisfaction. We currently offer only 5 corporate retreat packages per month to
+                    ensure quality.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-6" className="bg-white border border-forest-green-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-forest-green-700 font-semibold hover:text-burnt-orange-500">
+                    Can I rent camping gear without joining an adventure?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-dark-forest-700">
+                    We offer camping gear rental services for those who want to plan their own adventures. Fill out our
+                    gear rental form at docs.google.com/forms to see our available equipment, pricing, and rental terms.
+                    We offer tents, sleeping bags, cooking equipment, hiking gear, and more. You can also purchase
+                    camping gear directly from our online shop at paystack.shop/camping-gear-nigeria.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-7" className="bg-white border border-forest-green-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-forest-green-700 font-semibold hover:text-burnt-orange-500">
+                    What is the "Bring 5 friends, get 1 spot FREE" promotion?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-dark-forest-700">
+                    For individual weekend escape packages, when you bring 5 friends who book and pay for an adventure,
+                    you get your spot completely free. This promotion also includes VIP club access with exclusive
+                    benefits, early access to new adventure locations, priority booking, and special discounts. It's our
+                    way of rewarding adventurers who help build our community.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-8" className="bg-white border border-forest-green-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-forest-green-700 font-semibold hover:text-burnt-orange-500">
+                    Do you work with resorts and hotels in Nigeria?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-dark-forest-700">
+                    Yes! We offer resort partnership programs for hotels, resorts, and hospitality businesses across
+                    Nigeria. Our partnership benefits include co-branded guest experiences, flexible gear leasing
+                    partnerships, custom event design and planning, dedicated guest outdoor excursions, and revenue
+                    sharing opportunities. We help resorts enhance their guest experience while creating new revenue
+                    streams. Contact us to discuss partnership opportunities.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section
           id="contact"
@@ -715,7 +834,7 @@ export default function EscapeElevateLanding() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-burnt-orange-400 transition-colors">
+                  <Link href="#faq" className="hover:text-burnt-orange-400 transition-colors">
                     FAQ
                   </Link>
                 </li>
