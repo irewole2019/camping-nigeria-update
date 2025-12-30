@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/images/camping-nigeria-logo.png" },
+      { url: "/images/camping-nigeria-logo.png", sizes: "16x16", type: "image/png" },
+      { url: "/images/camping-nigeria-logo.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/images/camping-nigeria-logo.png" }],
+  },
   openGraph: {
     title: "Camping Nigeria - Adventure Made Simple",
     description:
